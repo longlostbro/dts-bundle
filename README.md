@@ -13,7 +13,7 @@ The main use-case is generating definition for npm/bower modules written in Type
 This module was born out of necessity and frustration. It is a little hacky but at least it seems to work..
 
 - Original code was extracted from an ad-hoc Grunt-task so for now it is fully synchronous with no error feedback.
-- It works by line-by-line string operations so please [report](https://github.com/grunt-ts/dts-bundle/issues) any edge-cases.
+- It works by line-by-line string operations so please [report](https://github.com/longlostbro/dts-bundle/issues) any edge-cases.
 
 
 ## Usage
@@ -21,7 +21,7 @@ This module was born out of necessity and frustration. It is a little hacky but 
 1) Get it from npm:
 
 ````
-npm install dts-bundle
+npm install @longlostbro/dts-bundle
 ````
 
 2) Compile your modules with the TypeScript compiler of your choice with the `--declaration` and `--outDir` flags (and probably `--module commonjs` too).
@@ -63,12 +63,6 @@ This will traverse all references and imports for the .d.ts files of your sub-mo
 ````
 
 Using this makes the definition findable for tooling, for example the [TypeScript Definitions package manager](https://github.com/DefinitelyTyped/tsd) (from v0.6.x) can auto-link these into `tsd.d.ts` bundle file.
-
-
-### Wrappers
-
-There is also a Grunt plugin [grunt-dts-bundle](https://www.github.com/grunt-ts/grunt-dts-bundle) that goes well with Grunt based compilers, like [grunt-ts](https://www.github.com/grunt-ts/grunt-ts) or [grunt-typescript](https://github.com/k-maru/grunt-typescript).
-
 
 ## Options
 
@@ -241,7 +235,7 @@ You can use `dts-bundle` from command line, its allow you use it from npm script
 You have to install it using -g:
 
 ````
-npm install dts-bundle -g
+npm install @longlostbro/dts-bundle -g
 ````
 
 You can use the following options:
@@ -318,6 +312,7 @@ Emitting `tmp/out/cooles.d.ts`.
 
 ## Key People
 
+* [David Taylor (longlostbro)](http://github.com/longlostbro) : current fork
 * [Javier Ros (tolemaC)](http://github.com/tolemac) : current lead
 * [Bart van der Schoor](https://github.com/Bartvds) : original creator
 

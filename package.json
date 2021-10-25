@@ -10,17 +10,14 @@
     "d.ts"
   ],
   "bin": {
-    "dts-bundle": "./lib/dts-bundle.js"
+    "dts-bundle": "lib/dts-bundle.js"
   },
   "homepage": "https://github.com/longlostbro/dts-bundle",
   "repository": {
     "type": "git",
-    "url": "https://github.com/longlostbro/dts-bundle.git"
+    "url": "git+https://github.com/longlostbro/dts-bundle.git"
   },
-  "author": {
-    "name": "Bart van der Schoor",
-    "url": "https://github.com/Bartvds"
-  },
+  "author": "Bart van der Schoor (https://github.com/Bartvds)",
   "licenses": [
     {
       "type": "MIT",
@@ -60,5 +57,10 @@
     "mocha-unfunk-reporter": "^0.4.0",
     "ncp": "^0.5.1",
     "typescript": "^2.3.4"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "license": "ISC"
 }
